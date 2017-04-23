@@ -1,3 +1,3 @@
 # chef-repo
 
-First tutorial cookbook
+First cookbook
