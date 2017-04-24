@@ -18,7 +18,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[chef-repo::default]
+      - recipe[]
     verifier:
       inspec_tests:
         - test/smoke/default

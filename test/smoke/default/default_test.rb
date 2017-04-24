@@ -6,13 +6,17 @@
 # found at http://inspec.io/docs/reference/resources/
 
 unless os.windows?
-  # This is an example test, replace with your own test.
-  describe user('root'), :skip do
+  impact 1.0
+  title "check root user"
+  desc "the root user should exist"
+    describe user('root') do
     it { should exist }
   end
 end
 
-# This is an example test, replace it with your own test.
-describe port(80), :skip do
+impact 1.0
+title "check service port"
+desc "port 80 should not be open. Yet."
+describe port(80) do
   it { should_not be_listening }
 end
