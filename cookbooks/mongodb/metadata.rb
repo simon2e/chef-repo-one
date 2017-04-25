@@ -1,7 +1,7 @@
 name 'mongodb'
 maintainer 'Simon Tuohey'
 maintainer_email 'you@example.com'
-version '0.3.0'
+version '0.4.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 description 'Installs/Configures mongodb'
 long_description 'Installs/Configures mongodb, learning exercise. NOT PRODUCTION READY'
