@@ -10,6 +10,7 @@ privacy true
 recipe 'mondodb::default', 'Install mongodb-org package'
 recipe 'mongodb::mongodb_yum_repo', 'Install yum repo file for mongodb-org distribution'
 recipe 'mongodb::mongodb_sys_config', 'Update system variables for mongodb hosting'
+depends 'limits', '~> 1.0.0'
 source_url 'https://github.com/simon2e/chef-repo-one'
 issues_url 'https://github.com/simon2e/chef-repo-one/issues'
 supports 'centos', '>= 7.3'

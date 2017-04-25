@@ -4,7 +4,7 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-cookbook 'limits', '~> 1.0.0'
+# set soft nprocs limit as recommended by mongod
 
 set_limit 'mongod' do
   type 'soft'
