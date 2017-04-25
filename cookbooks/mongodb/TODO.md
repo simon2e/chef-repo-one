@@ -1,1 +1,3 @@
 - [ ] add authentication setup for mongodb
+- [ ] add attribute lookup in tests instead of literal values
+- [ ] add more tests

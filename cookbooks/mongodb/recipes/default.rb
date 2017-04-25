@@ -18,6 +18,7 @@ template '/etc/mongod.conf' do
   owner 'root'
   group 'root'
   mode  '0644'
+  # can't reload config in mongodb without service impact, or would use notifies here
 end
 
 service 'mongod' do
