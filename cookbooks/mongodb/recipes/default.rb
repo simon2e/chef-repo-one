@@ -13,6 +13,13 @@ package 'Install MongoDB' do
   package_name 'mongodb-org'
 end
 
+template '/etc/mongod.conf' do
+  source 'dbconfig_file.erb'
+  owner 'root'
+  group 'root'
+  mode  '0644'
+end
+
 service 'mongod' do
   action [:enable, :start]
 end

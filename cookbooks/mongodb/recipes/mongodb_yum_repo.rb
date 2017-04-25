@@ -4,7 +4,9 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-repover= node['mongodb_yum_repo']['version']
+# MongoDB versions affect the repo path so we parameterise it
+
+repover= node['mongodb_yum_repo']['mongodb_version']
 
 yum_repository "mongodb-org-#{repover}" do
   description "MongoDB Repository - "
