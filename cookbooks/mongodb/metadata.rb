@@ -4,8 +4,8 @@ maintainer_email 'you@example.com'
 version '0.3.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 description 'Installs/Configures mongodb'
-license 'all_rights'
 long_description 'Installs/Configures mongodb, learning exercise. NOT PRODUCTION READY'
+license 'all_rights'
 privacy true
 recipe 'mondodb::default', 'Install mongodb-org package'
 recipe 'mongodb::mongodb_repo', 'Install yum repo file for mongodb-org distribution'
