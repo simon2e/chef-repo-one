@@ -19,6 +19,7 @@ suites:
   - name: default
     run_list:
       - recipe[mongodb::default]
+      - recipe[mongodb::mongodb_sys_config]
     verifier:
       inspec_tests:
         - test/smoke/default
