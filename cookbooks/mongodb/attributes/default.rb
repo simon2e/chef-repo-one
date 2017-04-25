@@ -3,4 +3,4 @@
 # Attributes:: default
 #
 
-default['mongodb-repo']['version']    = '3.4'
+default['mongodb_yum_repo']['version']    = '3.4'

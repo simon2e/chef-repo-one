@@ -1,10 +1,10 @@
 #
 # Cookbook:: mongodb
-# Recipe:: mongodb_repo
+# Recipe:: mongodb_yum_repo
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-repover= node['mongodb-repo']['version']
+repover= node['mongodb_yum_repo']['version']
 
 yum_repository "mongodb-org-#{repover}" do
   description "MongoDB Repository - "

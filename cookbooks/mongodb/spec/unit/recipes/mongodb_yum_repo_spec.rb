@@ -1,12 +1,12 @@
 #
 # Cookbook:: mongodb
-# Spec:: mongodb_repo
+# Spec:: mongodb_yum_repo
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
-describe 'mongodb::mongodb_repo' do
+describe 'mongodb::mongodb_yum_repo' do
   context 'When all attributes are default, on a Centos 7.3.1611' do
     let(:chef_run) do
       runner = ChefSpec::ServerRunner.new(platform: 'centos', version: '7.3.1611')

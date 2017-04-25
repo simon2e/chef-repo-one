@@ -8,7 +8,7 @@ long_description 'Installs/Configures mongodb, learning exercise. NOT PRODUCTION
 license 'all_rights'
 privacy true
 recipe 'mondodb::default', 'Install mongodb-org package'
-recipe 'mongodb::mongodb_repo', 'Install yum repo file for mongodb-org distribution'
+recipe 'mongodb::mongodb_yum_repo', 'Install yum repo file for mongodb-org distribution'
 recipe 'mongodb::mongodb_sys_config', 'Update system variables for mongodb hosting'
 source_url 'https://github.com/simon2e/chef-repo-one'
 issues_url 'https://github.com/simon2e/chef-repo-one/issues'
